@@ -6,6 +6,22 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h2>3 Fazer um programa que gera 100 números randômicos(aleatórios) entre 1 e 60. O
+        programa deve armazenar esses números gerados num array(vetor) de 100 posições. O
+        programa deve exibir esses valores armazenados no array na saída.</h2>
+
+    <script>
+        function numAleatorios(){
+            let array = [];
+            for(i = 1;i <= 100; i++){
+                let numeros = Math.floor(Math.random()* 60);
+                array.push(numeros,"<br>")
+                console.log(numeros)
+                
+            }
+            document.write(array)
+        }
+        numAleatorios()
+    </script>    
 </body>
 </html>
